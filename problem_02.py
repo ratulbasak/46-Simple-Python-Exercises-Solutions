@@ -17,3 +17,14 @@ def max_of_three(num1, num2, num3):
     #return max(num1,max(num2,num3))
     
 print(max_of_three(36,-366,900))
+
+###############<===OR===>#################
+
+def max_of_three(no1,no2,no3):
+	if no1 > (no2 and no3):
+		return no1
+	elif no3 > (no2 and no1):
+		return no3
+	else:
+		return no2
+print(max_of_three(30,-10,500))
